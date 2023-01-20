@@ -26,12 +26,12 @@ function ask_question() {
 function guessPsavings() {
   let answer;
 
-  while (answer != 200) {
+  while (answer != 450) {
     answer = prompt(
-      "Guess your potential savings with a passive house 250 or 450"
+      "Guess your potential savings with a passive house 200 or 450"
     );
 
-    if (answer != 250) {
+    if (answer != 450) {
       alert("It's even more than that!");
     } else {
       alert("That's correct, Isn't that a lot?");
@@ -47,7 +47,7 @@ function getRating() {
   let output = "Your rating: ";
 
   for (let i = 0; i < rating; i++) {
-    output = output + "<img src='./plant.webp' class='plant' />";
+    output = output + "<img src='./ecohouse.jpg' class='ecohouse' />";
   }
   document.write(output);
 }
