@@ -22,3 +22,32 @@ function ask_question() {
 
   document.write(message);
 }
+
+function guessPsavings() {
+  let answer;
+
+  while (answer != 200) {
+    answer = prompt(
+      "Guess your potential savings with a passive house 250 or 450"
+    );
+
+    if (answer != 250) {
+      alert("It's even more than that!");
+    } else {
+      alert("That's correct, Isn't that a lot?");
+      document.write(
+        "You can save that much! Just have a look on our solar page."
+      );
+    }
+  }
+}
+
+function getRating() {
+  let rating = prompt("Rate how efficient you your house is 1-5");
+  let output = "Your rating: ";
+
+  for (let i = 0; i < rating; i++) {
+    output = output + "<img src='./plant.webp' class='plant' />";
+  }
+  document.write(output);
+}
